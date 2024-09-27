@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Erigo</title>
     <link rel="stylesheet" href="src/output.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div class="tittle bg-[#121212] px-4 md:px-10 py-3 flex justify-between">
@@ -17,358 +13,169 @@
       </h2>
       <h2 class="font-normal font-inter text-sm text-white">Tracking</h2>
     </div>
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-4"
-      >
-        <a
-          href="index.html"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img src="img/Logo.png.png" alt="Flowbite Logo" />
-        </a>
-        <div class="flex md:order-2">
-          <button
-            type="button"
-            data-collapse-toggle="navbar-search"
-            aria-controls="navbar-search"
-            aria-expanded="false"
-            class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1"
-          >
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
             <svg
-              class="w-5 h-5"
-              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
               fill="none"
-              viewBox="0 0 20 20"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
               <path
-                stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                d="M4 6h16M4 12h16M4 18h7"
               />
             </svg>
-            <span class="sr-only">Search</span>
-          </button>
-          <div class="relative hidden md:block">
-            <div
-              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
-            >
-              <svg
-                class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                />
-              </svg>
-              <span class="sr-only">Search icon</span>
-            </div>
-            <div class="flex items-center gap-5">
-              <input
-                type="text"
-                id="search-navbar"
-                class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-gray-700 focus:border-gray-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Search..."
-              />
-              <a href="" class="hidden lg:block"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  fill="#000000"
-                  viewBox="0 0 256 256"
-                >
-                  <path
-                    d="M230.14,58.87A8,8,0,0,0,224,56H62.68L56.6,22.57A8,8,0,0,0,48.73,16H24a8,8,0,0,0,0,16h18L67.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,160,204a28,28,0,1,0,28-28H91.17a8,8,0,0,1-7.87-6.57L80.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,230.14,58.87ZM104,204a12,12,0,1,1-12-12A12,12,0,0,1,104,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,200,204Zm4-74.57A8,8,0,0,1,196.1,136H77.22L65.59,72H214.41Z"
-                  ></path>
-                </svg>
-              </a>
-              <a href="" class="hidden lg:block"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  fill="#000000"
-                  viewBox="0 0 256 256"
-                >
-                  <path
-                    d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
-                  ></path>
-                </svg>
-              </a>
-              <a href="" class="hidden lg:block"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="#FF8C04"
-                  viewBox="0 0 256 256"
-                >
-                  <path
-                    d="M216,72H180.92c.39-.33.79-.65,1.17-1A29.53,29.53,0,0,0,192,49.57,32.62,32.62,0,0,0,158.44,16,29.53,29.53,0,0,0,137,25.91a54.94,54.94,0,0,0-9,14.48,54.94,54.94,0,0,0-9-14.48A29.53,29.53,0,0,0,97.56,16,32.62,32.62,0,0,0,64,49.57,29.53,29.53,0,0,0,73.91,71c.38.33.78.65,1.17,1H40A16,16,0,0,0,24,88v32a16,16,0,0,0,16,16v64a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V136a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM149,36.51a13.69,13.69,0,0,1,10-4.5h.49A16.62,16.62,0,0,1,176,49.08a13.69,13.69,0,0,1-4.5,10c-9.49,8.4-25.24,11.36-35,12.4C137.7,60.89,141,45.5,149,36.51Zm-64.09.36A16.63,16.63,0,0,1,96.59,32h.49a13.69,13.69,0,0,1,10,4.5c8.39,9.48,11.35,25.2,12.39,34.92-9.72-1-25.44-4-34.92-12.39a13.69,13.69,0,0,1-4.5-10A16.6,16.6,0,0,1,84.87,36.87ZM40,88h80v32H40Zm16,48h64v64H56Zm144,64H136V136h64Zm16-80H136V88h80v32Z"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <button
-            data-collapse-toggle="navbar-search"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-search"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-        </div>
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-search"
-        >
-          <div class="relative mt-3 md:hidden">
-            <div
-              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
-            >
-              <svg
-                class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                />
-              </svg>
-            </div>
-            <input
-              type="text"
-              id="search-navbar"
-              class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Search..."
-            />
           </div>
           <ul
-            class="flex flex-col xl:mr-72 p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 font-bold text-base text-[#0B1A32] hover:text-black hover:-translate-y-1 transition-all ease-in-out duration-300"
-                aria-current="page"
-                >Koleksi Baru</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 font-bold text-base text-[#0B1A32] hover:text-black hover:-translate-y-1 transition-all ease-in-out duration-300"
-                >Produk
-                <hr class="hidden md:block border-black"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 font-bold text-base text-[#0B1A32] hover:text-black hover:-translate-y-1 transition-all ease-in-out duration-300"
-                >Artikel</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 font-bold text-base text-[#0B1A32] hover:text-black hover:-translate-y-1 transition-all ease-in-out duration-300"
-                >Lokasi Toko</a
-              >
-            </li>
+            <li><a>Homepage</a></li>
+            <li><a>Products</a></li>
+            <li><a>Blogs</a></li>
           </ul>
         </div>
       </div>
-    </nav>
-
-    <div
-      id="default-carousel"
-      class="container mx-auto px-4 md:px-0 relative w-full"
-      data-carousel="slide"
-    >
-      <!-- Carousel wrapper -->
-      <div
-        class="relative bg-slate-100 border h-[500px] md:bg-transparent overflow-hidden rounded-lg md:h-96"
-      >
-        <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="img/Shirt_Jacket_copy.png.png"
-            class="absolute h-1/2 md:h-auto object-cover block w-full -translate-x-1/2 -translate-y-1/2 top-28 left-[50%] md:top-1/2 md:left-1/2 md:mt-"
-            alt="..."
-          />
-          <div class="tittle">
-            <h2
-              class="md:text-base absolute font-koulen font-medium text-4xl block w-full -translate-x-[135px] lg:-translate-x-[600px] md:-translate-x-[350px] translate-y-[25px] md:-translate-y-1/2 top-1/2 left-1/2"
-            >
-              SHIRT JACKET
-            </h2>
-            <p
-              class="absolute md:text-base font-inter font-light text-sm block w-full -translate-x-[135px] lg:-translate-x-[600px] md:-translate-x-[350px] translate-y-[67px] md:translate-y-5 top-1/2 left-1/2"
-            >
-              Sebuah jaket dan kemeja dalam waktu <br />
-              yang bersamaan
-            </p>
-            <a href=""
-              ><button
-                class="absolute w-40 py-2 bg-[#121212] rounded-lg text-white md:text-black font-inter font-light text-sm block -translate-x-[135px] lg:-translate-x-[600px] md:-translate-x-[350px] translate-y-[125px] md:translate-y-[72px] top-1/2 left-1/2"
-              >
-                Harus Punya!
-              </button></a
-            >
-          </div>
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="img/Shirt_Jacket_copy.png.png"
-            class="absolute h-1/2 md:h-auto object-cover block w-full -translate-x-1/2 -translate-y-1/2 top-28 left-[50%] md:top-1/2 md:left-1/2 md:mt-"
-            alt="..."
-          />
-          <div class="tittle">
-            <h2
-              class="md:text-base absolute font-koulen font-medium text-4xl block w-full -translate-x-[135px] lg:-translate-x-[600px] md:-translate-x-[350px] translate-y-[25px] md:-translate-y-1/2 top-1/2 left-1/2"
-            >
-              SHIRT JACKET
-            </h2>
-            <p
-              class="absolute md:text-base font-inter font-light text-sm block w-full -translate-x-[135px] lg:-translate-x-[600px] md:-translate-x-[350px] translate-y-[67px] md:translate-y-5 top-1/2 left-1/2"
-            >
-              Sebuah jaket dan kemeja dalam waktu <br />
-              yang bersamaan
-            </p>
-            <a href=""
-              ><button
-                class="absolute w-40 py-2 bg-[#121212] rounded-lg text-white md:text-black font-inter font-light text-sm block -translate-x-[135px] lg:-translate-x-[600px] md:-translate-x-[350px] translate-y-[125px] md:translate-y-[72px] top-1/2 left-1/2"
-              >
-                Harus Punya!
-              </button></a
-            >
-          </div>
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="img/Shirt_Jacket_copy.png.png"
-            class="absolute h-1/2 md:h-auto object-cover block w-full -translate-x-1/2 -translate-y-1/2 top-28 left-[50%] md:top-1/2 md:left-1/2 md:mt-"
-            alt="..."
-          />
-          <div class="tittle">
-            <h2
-              class="md:text-base absolute font-koulen font-medium text-4xl block w-full -translate-x-[135px] lg:-translate-x-[600px] md:-translate-x-[350px] translate-y-[25px] md:-translate-y-1/2 top-1/2 left-1/2"
-            >
-              SHIRT JACKET
-            </h2>
-            <p
-              class="absolute md:text-base font-inter font-light text-sm block w-full -translate-x-[135px] lg:-translate-x-[600px] md:-translate-x-[350px] translate-y-[67px] md:translate-y-5 top-1/2 left-1/2"
-            >
-              Sebuah jaket dan kemeja dalam waktu <br />
-              yang bersamaan
-            </p>
-            <a href=""
-              ><button
-                class="absolute w-40 py-2 bg-[#121212] rounded-lg text-white md:text-black font-inter font-light text-sm block -translate-x-[135px] lg:-translate-x-[600px] md:-translate-x-[350px] translate-y-[125px] md:translate-y-[72px] top-1/2 left-1/2"
-              >
-                Harus Punya!
-              </button></a
-            >
-          </div>
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="img/Shirt_Jacket_copy.png.png"
-            class="absolute h-1/2 md:h-auto object-cover block w-full -translate-x-1/2 -translate-y-1/2 top-28 left-[50%] md:top-1/2 md:left-1/2 md:mt-"
-            alt="..."
-          />
-          <div class="tittle">
-            <h2
-              class="md:text-base absolute font-koulen font-medium text-4xl block w-full -translate-x-[135px] lg:-translate-x-[600px] md:-translate-x-[350px] translate-y-[25px] md:-translate-y-1/2 top-1/2 left-1/2"
-            >
-              SHIRT JACKET
-            </h2>
-            <p
-              class="absolute md:text-base font-inter font-light text-sm block w-full -translate-x-[135px] lg:-translate-x-[600px] md:-translate-x-[350px] translate-y-[67px] md:translate-y-5 top-1/2 left-1/2"
-            >
-              Sebuah jaket dan kemeja dalam waktu <br />
-              yang bersamaan
-            </p>
-            <a href=""
-              ><button
-                class="absolute w-40 py-2 bg-[#121212] rounded-lg text-white md:text-black font-inter font-light text-sm block -translate-x-[135px] lg:-translate-x-[600px] md:-translate-x-[350px] translate-y-[125px] md:translate-y-[72px] top-1/2 left-1/2"
-              >
-                Harus Punya!
-              </button></a
-            >
-          </div>
-        </div>
+      <div class="navbar-center">
+        <a href="#" class="btn btn-ghost text-xl"
+          ><img src="img/Logo.png.png" alt=""
+        /></a>
       </div>
-      <!-- Slider indicators -->
-      <div
-        class="absolute z-30 flex -translate-x-1/2 md:-translate-y-[20px] lg:translate-y-[10px] bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
-      >
-        <button
-          type="button"
-          class="w-2 h-2 rounded-full"
-          aria-current="true"
-          aria-label="Slide 1"
-          data-carousel-slide-to="0"
-        ></button>
-        <button
-          type="button"
-          class="w-2 h-2 rounded-full"
-          aria-current="false"
-          aria-label="Slide 2"
-          data-carousel-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          class="w-2 h-2 rounded-full"
-          aria-current="false"
-          aria-label="Slide 3"
-          data-carousel-slide-to="2"
-        ></button>
-        <button
-          type="button"
-          class="w-2 h-2 rounded-full"
-          aria-current="false"
-          aria-label="Slide 4"
-          data-carousel-slide-to="3"
-        ></button>
+      <div class="navbar-end">
+        <button class="btn btn-ghost btn-circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </button>
+        <button class="btn btn-ghost btn-circle">
+          <div class="indicator">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+              />
+            </svg>
+            <span class="badge badge-xs badge-primary indicator-item"></span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="container mx-auto w-full px-4">
+      <div class="carousel rounded-box w-full h-96">
+        <div class="carousel-item w-full container mx-auto relative">
+          <img
+            src="img/Shirt_Jacket_copy.png.png"
+            class="w-full object-cover bg-center"
+            alt="Tailwind CSS Carousel component"
+          />
+          <h2
+            class="absolute top-1/2 left-10 md:left-16 font-medium text-4xl md:text-6xl font-koulen"
+          >
+            SHIRT JACKET
+          </h2>
+          <p
+            class="absolute top-1/2 left-10 md:left-16 font-medium text-base font-inter mt-10 md:mt-14"
+          >
+            Sebuah jaket dan kemeja dalam waktu yang bersamaan
+          </p>
+          <button
+            class="absolute top-1/2 left-10 md:left-16 bg-black text-white font-inter px-5 py-2 rounded-lg mt-24 md:mt-[85px]"
+          >
+            Beli Sekarang
+          </button>
+        </div>
+        <div class="carousel-item w-full container mx-auto relative">
+          <img
+            src="img/Shirt_Jacket_copy.png.png"
+            class="w-full object-cover bg-center"
+            alt="Tailwind CSS Carousel component"
+          />
+          <h2
+            class="absolute top-1/2 left-10 md:left-16 font-medium text-4xl md:text-6xl font-koulen"
+          >
+            SHIRT JACKET
+          </h2>
+          <p
+            class="absolute top-1/2 left-10 md:left-16 font-medium text-base font-inter mt-10 md:mt-14"
+          >
+            Sebuah jaket dan kemeja dalam waktu yang bersamaan
+          </p>
+          <button
+            class="absolute top-1/2 left-10 md:left-16 bg-black text-white font-inter px-5 py-2 rounded-lg mt-24 md:mt-[85px]"
+          >
+            Beli Sekarang
+          </button>
+        </div>
+        <div class="carousel-item w-full container mx-auto relative">
+          <img
+            src="img/Shirt_Jacket_copy.png.png"
+            class="w-full object-cover bg-center"
+            alt="Tailwind CSS Carousel component"
+          />
+          <h2
+            class="absolute top-1/2 left-10 md:left-16 font-medium text-4xl md:text-6xl font-koulen"
+          >
+            SHIRT JACKET
+          </h2>
+          <p
+            class="absolute top-1/2 left-10 md:left-16 font-medium text-base font-inter mt-10 md:mt-14"
+          >
+            Sebuah jaket dan kemeja dalam waktu yang bersamaan
+          </p>
+          <button
+            class="absolute top-1/2 left-10 md:left-16 bg-black text-white font-inter px-5 py-2 rounded-lg mt-24 md:mt-[85px]"
+          >
+            Beli Sekarang
+          </button>
+        </div>
+        <div class="carousel-item w-full container mx-auto relative">
+          <img
+            src="img/Shirt_Jacket_copy.png.png"
+            class="w-full object-cover bg-center"
+            alt="Tailwind CSS Carousel component"
+          />
+          <h2
+            class="absolute top-1/2 left-10 md:left-16 font-medium text-4xl md:text-6xl font-koulen"
+          >
+            SHIRT JACKET
+          </h2>
+          <p
+            class="absolute top-1/2 left-10 md:left-16 font-medium text-base font-inter mt-10 md:mt-14"
+          >
+            Sebuah jaket dan kemeja dalam waktu yang bersamaan
+          </p>
+          <button
+            class="absolute top-1/2 left-10 md:left-16 bg-black text-white font-inter px-5 py-2 rounded-lg mt-24 md:mt-[85px]"
+          >
+            Beli Sekarang
+          </button>
+        </div>
       </div>
     </div>
 
@@ -376,84 +183,79 @@
       <div
         class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 md:gap-2"
       >
-        <div class="card-1 mt-2 bg-[#F3F3F3] rounded-lg">
-          <div class="relative">
-            <img
-              src="img/Group 1 (1).png"
-              class="rounded-lg relative md:h-[426px]"
-            />
-            <h2
-              class="absolute top-7 md:top-12 left-5 font-koulen font-medium text-2xl"
-            >
-              Kenapa Harus Beli Di Website Erigo
+        <div
+          class="card-1 mt-2 bg-[url('./../img/card-1.png')] h-[426px] bg-cover bg-center rounded-lg"
+        >
+          <div class="tittle px-5 mt-10">
+            <h2 class="font-koulen text-2xl font-medium">
+              KENAPA HARUS BELI DI ERIGO?
             </h2>
-            <ul class="absolute top-16 md:top-[84px] left-5">
-              <li class="font-inter text-base font-medium">Gratis Ongkir</li>
-              <li class="font-inter text-base font-medium">
+            <ul class="px-5 mt-3" style="list-style-type: disc">
+              <li class="font-inter text-base font-semibold">Gratis Ongkir</li>
+              <li class="font-inter text-base font-semibold">
                 Special Packaging
               </li>
-              <li class="font-inter text-base font-medium">
-                Jaminan <i>Refund/Return</i>
+              <li class="font-inter text-base font-semibold">
+                Jaminan <i>Return/Refund</i>
               </li>
             </ul>
-            <a href="" class="absolute top-40 md:top-44 left-5"
-              ><button
-                class="bg-black rounded-lg text-white font-inter px-3 py-2"
-              >
-                Read More
-              </button></a
+            <button
+              class="bg-black rounded-lg text-white font-inter px-5 py-2 mt-5"
             >
+              Read More
+            </button>
           </div>
         </div>
-        <div class="card-2 mt-2 bg-[#F3F3F3] rounded-lg">
-          <div class="relative">
-            <img
-              src="img/Group 2.png"
-              class="rounded-lg relative md:h-[426px]"
-            />
-            <h2
-              class="absolute text-white text-center w-48 top-[40%] left-[85px] md:left-[110px] font-koulen font-medium text-base md:text-lg"
+        <div
+          class="card-2 mt-2 bg-[url('./../img/card-2.png')] h-[426px] bg-cover bg-center rounded-lg flex flex-col justify-center items-center"
+        >
+          <h2
+            class="font-koulen text-2xl font-medium text-white w-48 text-center"
+          >
+            SESUATU YANG MENAKJUBKAN AKAN HADIR
+          </h2>
+          <button
+            class="bg-white rounded-lg text-black font-inter px-3 py-2 mt-2"
+          >
+            Sudah Siap?
+          </button>
+          <!-- <img src="img/Group 2.png" class="rounded-lg relative h-[426px]" />
+          <h2
+            class="absolute text-white text-center w-48 top-[40%] left-[85px] md:left-[110px] font-koulen font-medium text-base md:text-lg"
+          >
+            Sesuatu Yang Menakjubkan Akan Hadir
+          </h2>
+          <a
+            href=""
+            class="absolute top-52 md:top-60 left-[122px] md:left-[150px]"
+            ><button
+              class="bg-white rounded-lg text-black font-inter px-3 py-2"
             >
-              Sesuatu Yang Menakjubkan Akan Hadir
-            </h2>
-            <a
-              href=""
-              class="absolute top-52 md:top-60 left-[122px] md:left-[150px]"
-              ><button
-                class="bg-white rounded-lg text-black font-inter px-3 py-2"
-              >
-                Sudah Siap?
-              </button></a
-            >
-          </div>
+              Sudah Siap?
+            </button></a
+          > -->
         </div>
-        <div class="card-3 mt-2 bg-[#F3F3F3] rounded-lg">
-          <div class="relative">
-            <img
-              src="img/Group 1 (1).png"
-              class="rounded-lg relative md:h-[426px]"
-            />
-            <h2
-              class="absolute top-7 md:top-12 left-5 font-koulen font-medium text-2xl"
-            >
-              Kenapa Harus Beli Di Website Erigo
+        <div
+          class="card-3 mt-2 bg-[url('./../img/card-1.png')] h-[426px] bg-cover bg-center rounded-lg"
+        >
+          <div class="tittle px-5 mt-10">
+            <h2 class="font-koulen text-2xl font-medium">
+              KENAPA HARUS BELI DI ERIGO?
             </h2>
-            <ul class="absolute top-16 md:top-[84px] left-5">
-              <li class="font-inter text-base font-medium">Gratis Ongkir</li>
-              <li class="font-inter text-base font-medium">
+            <ul class="px-5 mt-3" style="list-style-type: disc">
+              <li class="font-inter text-base font-semibold">Gratis Ongkir</li>
+              <li class="font-inter text-base font-semibold">
                 Special Packaging
               </li>
-              <li class="font-inter text-base font-medium">
-                Jaminan <i>Refund/Return</i>
+              <li class="font-inter text-base font-semibold">
+                Jaminan <i>Return/Refund</i>
               </li>
             </ul>
-            <a href="" class="absolute top-40 md:top-44 left-5"
-              ><button
-                class="bg-black rounded-lg text-white font-inter px-3 py-2"
-              >
-                Read More
-              </button></a
+            <button
+              class="bg-black rounded-lg text-white font-inter px-5 py-2 mt-5"
             >
+              Read More
+            </button>
           </div>
         </div>
       </div>
@@ -619,7 +421,9 @@
 
     <div class="container mx-auto mb-10">
       <div class="tittle">
-        <h2 class="text-center font-koulen text-2xl font-medium mb-4 md:mb-10">
+        <h2
+          class="text-center font-koulen text-2xl md:text-4xl font-medium pb-4 md:mb-10"
+        >
           Koleksi Baru
         </h2>
       </div>
@@ -666,7 +470,7 @@
       </div>
     </div>
 
-    <div class="container mx-auto mb-5">
+    <div class="container mx-auto mb-24">
       <div class="tittle">
         <h2
           class="text-center font-koulen text-2xl md:text-4xl font-medium mb-4 md:mb-10"
@@ -807,76 +611,426 @@
       </div>
     </div>
 
-    <section class="blog mt-10 mb-24">
-      <div class="relative">
-        <img
-          src="img/Section.png"
-          class="absolute h-[800px] md:h-auto object-cover overflow-x-scroll"
-        />
+    <section class="blog mb-24">
+      <div
+        class="wrapper bg-[url('./../img/Section.png')] h-full w-full bg-cover bg-center pb-16"
+      >
         <h2
-          class="absolute top-8 left-1/2 -translate-x-1/2 mx-auto font-koulen text-white font-medium text-2xl"
+          class="font-koulen text-lg md:text-2xl text-white font-medium text-center pt-16 mb-4"
         >
-          Blog
+          BLOG
         </h2>
         <div
-          class="card-1 absolute mt-8 bg-white md:w-[38rem] rounded-lg top-16 left-1/2 -translate-x-1/2 mx-auto grid grid-cols-1 md:grid-cols-2"
+          class="flex flex-row overflow-x-scroll"
+          style="scrollbar-width: none"
         >
-          <div class="img">
-            <img
-              src="img/Erigo_x_MPL_5.png.png"
-              class="p-4 h-[300px] md:h-auto w-full bg-contain"
-            />
-          </div>
-          <div class="tittle px-4">
-            <h2
-              class="text-[#121212] text-opacity-70 text-base font-medium font-inter md:mt-4"
-            >
-              Blogs
-            </h2>
-            <h1
-              class="font-koulen text-[#121212] text-3xl md:text-4xl font-medium w-52 mt-2 pr-8"
-            >
-              KOLABORASI ERIGO X MPL INDONESIA
-            </h1>
-            <div class="vector flex items-center gap-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#000000"
-                viewBox="0 0 256 256"
-                class="mt-2"
-              >
-                <path
-                  d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
-                ></path>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#000000"
-                viewBox="0 0 256 256"
-                class="mt-2"
-              >
-                <path
-                  d="M186.42,123.65a63.81,63.81,0,0,0-11.13-6.72c-4-29.89-24-39.31-33.1-42.07-19.78-6-42.51,1.19-52.85,16.7a8,8,0,0,0,13.32,8.88c6.37-9.56,22-14.16,34.89-10.27,9.95,3,16.82,10.3,20.15,21a81.05,81.05,0,0,0-15.29-1.43c-13.92,0-26.95,3.59-36.67,10.1C94.3,127.57,88,139,88,152c0,20.58,15.86,35.52,37.71,35.52a48,48,0,0,0,34.35-14.81c6.44-6.7,14-18.36,15.61-37.1.38.26.74.53,1.1.8C186.88,144.05,192,154.68,192,168c0,19.36-20.34,48-64,48-26.73,0-45.48-8.65-57.34-26.44C60.93,175,56,154.26,56,128s4.93-47,14.66-61.56C82.52,48.65,101.27,40,128,40c32.93,0,54,13.25,64.53,40.52a8,8,0,1,0,14.93-5.75C194.68,41.56,167.2,24,128,24,96,24,72.19,35.29,57.34,57.56,45.83,74.83,40,98.52,40,128s5.83,53.17,17.34,70.44C72.19,220.71,96,232,128,232c30.07,0,48.9-11.48,59.4-21.1C200.3,199.08,208,183,208,168,208,149.66,200.54,134.32,186.42,123.65Zm-37.89,38a31.94,31.94,0,0,1-22.82,9.9c-10.81,0-21.71-6-21.71-19.52,0-12.63,12-26.21,38.41-26.21A63.88,63.88,0,0,1,160,128.24C160,142.32,156,153.86,148.53,161.62Z"
-                ></path>
-              </svg>
+          <div
+            class="card-1 flex flex-col md:flex-row gap-x-5 flex-shrink-0 bg-white w-64 md:w-[526px] rounded-lg p-4 mx-4"
+          >
+            <div class="image">
+              <img
+                src="img/Erigo_x_MPL_5.png.png"
+                class="mx-auto md:w-96"
+              />
             </div>
-            <p
-              class="font-inter text-base text-[#121212] text-opacity-70 font-medium w-fit md:w-80 mt-2 mb-4 pr-8 line-clamp-[8]"
-            >
-              Ditengah hiruk pikuk persaingan dunia fashion maupun game,
-              akhirnya tercipta kolaborasi yang mempertemukan ambisi besar dan
-              kreativitas, menyatukan misi untuk melahirkan sesuatu yang akan
-              menjadi perbincangan hangat. Erigo memeriahkan bulan keme...
-            </p>
+            <div class="tittle max-w-64">
+              <h2
+                class="text-[#121212] text-opacity-70 text-base font-medium font-inter mt-2"
+              >
+                Blogs
+              </h2>
+              <h1
+                class="font-koulen text-[#121212] text-3xl md:text-4xl font-medium"
+              >
+                KOLABORASI ERIGO X MPL INDONESIA
+              </h1>
+              <div class="vector flex items-center gap-3 md:mt-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                  class="mt-2"
+                >
+                  <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                  class="mt-2"
+                >
+                  <path
+                    d="M186.42,123.65a63.81,63.81,0,0,0-11.13-6.72c-4-29.89-24-39.31-33.1-42.07-19.78-6-42.51,1.19-52.85,16.7a8,8,0,0,0,13.32,8.88c6.37-9.56,22-14.16,34.89-10.27,9.95,3,16.82,10.3,20.15,21a81.05,81.05,0,0,0-15.29-1.43c-13.92,0-26.95,3.59-36.67,10.1C94.3,127.57,88,139,88,152c0,20.58,15.86,35.52,37.71,35.52a48,48,0,0,0,34.35-14.81c6.44-6.7,14-18.36,15.61-37.1.38.26.74.53,1.1.8C186.88,144.05,192,154.68,192,168c0,19.36-20.34,48-64,48-26.73,0-45.48-8.65-57.34-26.44C60.93,175,56,154.26,56,128s4.93-47,14.66-61.56C82.52,48.65,101.27,40,128,40c32.93,0,54,13.25,64.53,40.52a8,8,0,1,0,14.93-5.75C194.68,41.56,167.2,24,128,24,96,24,72.19,35.29,57.34,57.56,45.83,74.83,40,98.52,40,128s5.83,53.17,17.34,70.44C72.19,220.71,96,232,128,232c30.07,0,48.9-11.48,59.4-21.1C200.3,199.08,208,183,208,168,208,149.66,200.54,134.32,186.42,123.65Zm-37.89,38a31.94,31.94,0,0,1-22.82,9.9c-10.81,0-21.71-6-21.71-19.52,0-12.63,12-26.21,38.41-26.21A63.88,63.88,0,0,1,160,128.24C160,142.32,156,153.86,148.53,161.62Z"
+                  ></path>
+                </svg>
+              </div>
+              <p
+                class="font-inter text-base text-[#121212] text-opacity-70 font-medium line-clamp-6 mt-2 md:mt-5"
+              >
+                Ditengah hiruk pikuk persaingan dunia fashion maupun game,
+                akhirnya tercipta kolaborasi yang mempertemukan ambisi besar dan
+                kreativitas, menyatukan misi untuk melahirkan sesuatu yang akan
+                menjadi perbincangan hangat. Erigo memeriahkan bulan keme...
+              </p>
+            </div>
+          </div>
+          <div
+            class="card-2 flex flex-col md:flex-row gap-x-5 flex-shrink-0 bg-white w-64 md:w-[526px] rounded-lg p-4 mx-4"
+          >
+            <div class="image">
+              <img
+                src="img/Erigo_x_MPL_5.png.png"
+                class="mx-auto md:w-96"
+              />
+            </div>
+            <div class="tittle  max-w-64">
+              <h2
+                class="text-[#121212] text-opacity-70 text-base font-medium font-inter mt-2"
+              >
+                Blogs
+              </h2>
+              <h1
+                class="font-koulen text-[#121212] text-3xl md:text-4xl font-medium"
+              >
+                KOLABORASI ERIGO X MPL INDONESIA
+              </h1>
+              <div class="vector flex items-center gap-3 md:mt-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                  class="mt-2"
+                >
+                  <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                  class="mt-2"
+                >
+                  <path
+                    d="M186.42,123.65a63.81,63.81,0,0,0-11.13-6.72c-4-29.89-24-39.31-33.1-42.07-19.78-6-42.51,1.19-52.85,16.7a8,8,0,0,0,13.32,8.88c6.37-9.56,22-14.16,34.89-10.27,9.95,3,16.82,10.3,20.15,21a81.05,81.05,0,0,0-15.29-1.43c-13.92,0-26.95,3.59-36.67,10.1C94.3,127.57,88,139,88,152c0,20.58,15.86,35.52,37.71,35.52a48,48,0,0,0,34.35-14.81c6.44-6.7,14-18.36,15.61-37.1.38.26.74.53,1.1.8C186.88,144.05,192,154.68,192,168c0,19.36-20.34,48-64,48-26.73,0-45.48-8.65-57.34-26.44C60.93,175,56,154.26,56,128s4.93-47,14.66-61.56C82.52,48.65,101.27,40,128,40c32.93,0,54,13.25,64.53,40.52a8,8,0,1,0,14.93-5.75C194.68,41.56,167.2,24,128,24,96,24,72.19,35.29,57.34,57.56,45.83,74.83,40,98.52,40,128s5.83,53.17,17.34,70.44C72.19,220.71,96,232,128,232c30.07,0,48.9-11.48,59.4-21.1C200.3,199.08,208,183,208,168,208,149.66,200.54,134.32,186.42,123.65Zm-37.89,38a31.94,31.94,0,0,1-22.82,9.9c-10.81,0-21.71-6-21.71-19.52,0-12.63,12-26.21,38.41-26.21A63.88,63.88,0,0,1,160,128.24C160,142.32,156,153.86,148.53,161.62Z"
+                  ></path>
+                </svg>
+              </div>
+              <p
+                class="font-inter text-base text-[#121212] text-opacity-70 font-medium line-clamp-6 mt-2 md:mt-5"
+              >
+                Ditengah hiruk pikuk persaingan dunia fashion maupun game,
+                akhirnya tercipta kolaborasi yang mempertemukan ambisi besar dan
+                kreativitas, menyatukan misi untuk melahirkan sesuatu yang akan
+                menjadi perbincangan hangat. Erigo memeriahkan bulan keme...
+              </p>
+            </div>
+          </div>
+          <div
+            class="card-3 flex flex-col md:flex-row gap-x-5 flex-shrink-0 bg-white w-64 md:w-[526px] rounded-lg p-4 mx-4"
+          >
+            <div class="image">
+              <img
+                src="img/Erigo_x_MPL_5.png.png"
+                class="mx-auto md:w-96"
+              />
+            </div>
+            <div class="tittle  max-w-64">
+              <h2
+                class="text-[#121212] text-opacity-70 text-base font-medium font-inter mt-2"
+              >
+                Blogs
+              </h2>
+              <h1
+                class="font-koulen text-[#121212] text-3xl md:text-4xl font-medium"
+              >
+                KOLABORASI ERIGO X MPL INDONESIA
+              </h1>
+              <div class="vector flex items-center gap-3 md:mt-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                  class="mt-2"
+                >
+                  <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                  class="mt-2"
+                >
+                  <path
+                    d="M186.42,123.65a63.81,63.81,0,0,0-11.13-6.72c-4-29.89-24-39.31-33.1-42.07-19.78-6-42.51,1.19-52.85,16.7a8,8,0,0,0,13.32,8.88c6.37-9.56,22-14.16,34.89-10.27,9.95,3,16.82,10.3,20.15,21a81.05,81.05,0,0,0-15.29-1.43c-13.92,0-26.95,3.59-36.67,10.1C94.3,127.57,88,139,88,152c0,20.58,15.86,35.52,37.71,35.52a48,48,0,0,0,34.35-14.81c6.44-6.7,14-18.36,15.61-37.1.38.26.74.53,1.1.8C186.88,144.05,192,154.68,192,168c0,19.36-20.34,48-64,48-26.73,0-45.48-8.65-57.34-26.44C60.93,175,56,154.26,56,128s4.93-47,14.66-61.56C82.52,48.65,101.27,40,128,40c32.93,0,54,13.25,64.53,40.52a8,8,0,1,0,14.93-5.75C194.68,41.56,167.2,24,128,24,96,24,72.19,35.29,57.34,57.56,45.83,74.83,40,98.52,40,128s5.83,53.17,17.34,70.44C72.19,220.71,96,232,128,232c30.07,0,48.9-11.48,59.4-21.1C200.3,199.08,208,183,208,168,208,149.66,200.54,134.32,186.42,123.65Zm-37.89,38a31.94,31.94,0,0,1-22.82,9.9c-10.81,0-21.71-6-21.71-19.52,0-12.63,12-26.21,38.41-26.21A63.88,63.88,0,0,1,160,128.24C160,142.32,156,153.86,148.53,161.62Z"
+                  ></path>
+                </svg>
+              </div>
+              <p
+                class="font-inter text-base text-[#121212] text-opacity-70 font-medium line-clamp-6 mt-2 md:mt-5"
+              >
+                Ditengah hiruk pikuk persaingan dunia fashion maupun game,
+                akhirnya tercipta kolaborasi yang mempertemukan ambisi besar dan
+                kreativitas, menyatukan misi untuk melahirkan sesuatu yang akan
+                menjadi perbincangan hangat. Erigo memeriahkan bulan keme...
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <section class="product mb-24">
+      <div class="flex flex-col md:flex-row w-full">
+        <div
+          class="wrapper bg-[url('./../img/produk.png')] h-fit md:h-96 md:w-1/2 bg-center bg-cover"
+        >
+          <div class="tittle px-10 py-14">
+            <h2 class="font-koulen text-white text-4xl font-medium">
+              PARFUME SERIES
+            </h2>
+            <h2 class="font-inter text-white text-base font-extralight">
+              Menemani setiap kegiatanu
+            </h2>
+            <a href="">
+              <button
+                class="bg-[#121212] py-3 px-7 text-white font-light font-inter rounded-xl mt-4"
+              >
+                Rasakan Perbedaannya!
+              </button>
+            </a>
+          </div>
+        </div>
+        <div
+          class="wrapper bg-[url('./../img/produk2.png')] h-fit md:h-96 md:w-1/2 bg-center bg-cover"
+        >
+          <div class="tittle px-10 py-14">
+            <h2 class="font-koulen text-white text-4xl font-medium">
+              EXPLORE MORE AND MORE
+            </h2>
+            <h2 class="font-inter text-white text-base font-extralight">
+              Rasakan camilan perjalanan yang nyaman dan bergizi saat bepergian
+              dengan aksesories fungisonal
+            </h2>
+            <a href="">
+              <button
+                class="bg-[#121212] py-3 px-7 text-white font-light font-inter rounded-xl mt-4"
+              >
+                Lengkapi Koleksimu!
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black">
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+          <div>
+            <h2
+              class="mb-6 text-lg font-normal font-koulen text-white uppercase"
+            >
+              ERIGO
+            </h2>
+            <ul class="text-gray-500 font-normal">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Lokasi Toko</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Tantang Kami</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Hubungi Kami</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-lg font-normal font-koulen text-white uppercase"
+            >
+              Bantuan
+            </h2>
+            <ul class="text-gray-500 font-normal">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">FAQ</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Pembayaran</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Penukaran & Pengambilan</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Kebijakan Privasi</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-lg font-normal font-koulen text-white uppercase"
+            >
+              Customer
+            </h2>
+            <ul class="text-gray-500 font-normal">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Voucher</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Lacak Pesanan</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-lg font-normal font-koulen text-white uppercase"
+            >
+              Produk
+            </h2>
+            <ul class="text-gray-500 font-normal">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Sale</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Koleksi Baru</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Kaos</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Kemeja</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Celana</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Aksesoris</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="px-4 py-6 bg-black border-x border-t border-slate-600 rounded-lg md:flex md:items-center md:justify-between"
+        >
+          <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center"
+            >© 2024 <a href="https://flowbite.com/">Erigo™</a>. All Rights
+            Reserved.
+          </span>
+          <div
+            class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse"
+          >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 8 19"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 21 16"
+              >
+                <path
+                  d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                />
+              </svg>
+              <span class="sr-only">Discord community</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 17"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Dribbble account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

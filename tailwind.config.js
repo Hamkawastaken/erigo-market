@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
@@ -15,5 +15,8 @@ module.exports = {
       xl: "1280px",
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light"],
+  },
 };
